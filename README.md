@@ -1,6 +1,8 @@
 # YouTube Transcript CLI
 
-Fetch the transcript of any YouTube video right in your terminal — with optional language selection, time range filtering, and automatic clipboard copy.
+![CLI demo](demo.gif)
+
+Fetch the transcript of any YouTube video right in your terminal with optional language selection, time range filtering, and automatic clipboard copy.
 
 ---
 
@@ -13,7 +15,7 @@ npm install
 # 2. Make the script executable
 chmod +x transcript.js
 
-# 3. (Optional) Use it anywhere — symlink or alias
+# 3. (Optional) Use it anywhere - symlink or alias
 ln -s "$(pwd)/transcript.js" /usr/local/bin/transcript
 ```
 
@@ -71,11 +73,11 @@ All of these are valid:
 # timestamps ON by default
 ./transcript.js https://youtu.be/VIDEO_ID en 1:30 3:00
 
-# timestamps OFF — long form
-./transcript.js https://youtu.be/VIDEO_ID en 1:30 3:00 --no-timestamps
+# timestamps OFF - long form
+./transcript.js www.youtube.com/VIDEO_ID en 1:30 3:00 --no-timestamps
 
-# timestamps OFF — shorthand
-./transcript.js https://youtu.be/VIDEO_ID en 1:30 3:00 -nt
+# timestamps OFF - shorthand
+./transcript.js www.youtube.com/VIDEO_ID en 1:30 3:00 -nt
 ```
 
 ---
